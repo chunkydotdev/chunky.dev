@@ -1,0 +1,69 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  --background: oklch(95.38% 0.0357 72.89);
+  --secondary-background: oklch(100% 0 0);
+  --foreground: oklch(0% 0 0);
+  --main-foreground: oklch(0% 0 0);
+  --main: oklch(75% 0.19 72);
+  --border: oklch(0% 0 0);
+  --ring: oklch(0% 0 0);
+  --overlay: oklch(0% 0 0 / 0.8);
+  --shadow: 4px 4px 0px 0px var(--border);
+}
+
+.dark {
+  --background: oklch(26.86% 0.0327 60.06);
+  --secondary-background: oklch(23.93% 0 0);
+  --foreground: oklch(92.49% 0 0);
+  --main-foreground: oklch(0% 0 0);
+  --main: oklch(75% 0.19 72);
+  --border: oklch(0% 0 0);
+  --ring: oklch(100% 0 0);
+  --shadow: 4px 4px 0px 0px var(--border);
+}
+
+@theme inline {
+  --color-main: var(--main);
+  --color-background: var(--background);
+  --color-secondary-background: var(--secondary-background);
+  --color-foreground: var(--foreground);
+  --color-main-foreground: var(--main-foreground);
+  --color-border: var(--border);
+  --color-overlay: var(--overlay);
+  --color-ring: var(--ring);
+
+  --spacing-boxShadowX: 4px;
+  --spacing-boxShadowY: 4px;
+  --spacing-reverseBoxShadowX: -4px;
+  --spacing-reverseBoxShadowY: -4px;
+  --radius-base: 5px;
+  --shadow-shadow: var(--shadow);
+  --font-weight-base: 500;
+  --font-weight-heading: 900;
+}
+
+@theme {
+  --shadow-chunky: 8px 8px 0px 0px rgba(0, 0, 0, 1);
+  --shadow-chunky-sm: 4px 4px 0px 0px rgba(0, 0, 0, 1);
+  --shadow-chunky-lg: 12px 12px 0px 0px rgba(0, 0, 0, 1);
+
+  /* Main color palette using OKLCH */
+  --color-main-50: oklch(97% 0.03 72);
+  --color-main-100: oklch(95% 0.05 72);
+  --color-main-200: oklch(90% 0.08 72);
+  --color-main-300: oklch(85% 0.12 72);
+  --color-main-400: oklch(80% 0.16 72);
+  --color-main-500: oklch(75% 0.19 72);
+  --color-main-600: oklch(65% 0.18 72);
+  --color-main-700: oklch(55% 0.17 72);
+  --color-main-800: oklch(40% 0.15 72);
+  --color-main-900: oklch(30% 0.13 72);
+  --color-main-950: oklch(20% 0.1 72);
+
+  /* Text color for main colored backgrounds */
+  --color-main-foreground: oklch(100% 0 0);
+}
