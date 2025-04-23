@@ -7,6 +7,7 @@ import OfferSection from "@/components/landing/OfferSection";
 import ProofSection from "@/components/landing/ProofSection";
 import SignedUp from "@/components/landing/SignedUp";
 import SignupFormSection from "@/components/landing/SignupFormSection";
+import { Suspense } from "react";
 
 export default function Home() {
   return (
@@ -21,7 +22,9 @@ export default function Home() {
         <FinalCTASection />
         <FooterSection />
       </div>
-      <SignedUp />
+      <Suspense>
+        <SignedUp />
+      </Suspense>
     </main>
   );
 }
