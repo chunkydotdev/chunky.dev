@@ -20,8 +20,6 @@ export default function SignupFormSection() {
               action="https://buttondown.com/api/emails/embed-subscribe/chunkydotdev"
               method="post"
               target="popupwindow"
-              // @ts-ignore
-              //onSubmit="window.open('https://buttondown.com/chunkydotdev', 'popupwindow')"
               className="space-y-4"
             >
               <div>

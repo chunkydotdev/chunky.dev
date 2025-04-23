@@ -5,6 +5,7 @@ import HeroSection from "@/components/landing/HeroSection";
 import HowItWorksSection from "@/components/landing/HowItWorksSection";
 import OfferSection from "@/components/landing/OfferSection";
 import ProofSection from "@/components/landing/ProofSection";
+import SignedUp from "@/components/landing/SignedUp";
 import SignupFormSection from "@/components/landing/SignupFormSection";
 
 export default function Home() {
@@ -20,6 +21,7 @@ export default function Home() {
         <FinalCTASection />
         <FooterSection />
       </div>
+      <SignedUp />
     </main>
   );
 }
