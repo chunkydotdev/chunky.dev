@@ -12,7 +12,7 @@ import { Suspense } from "react";
 export default function Home() {
   return (
     <main className="relative min-h-screen font-sans">
-      <div className="relative z-10 max-w-screen-xl mx-auto">
+      <div className="relative z-10 mx-auto">
         <HeroSection />
         <OfferSection />
         <ProofSection />

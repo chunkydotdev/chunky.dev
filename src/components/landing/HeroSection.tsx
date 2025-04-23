@@ -3,7 +3,7 @@ import { IconArrowRight } from "@tabler/icons-react";
 
 export default function HeroSection() {
   return (
-    <section className="py-20 px-4 text-center relative overflow-hidden">
+    <section className="py-20 px-4 text-center relative overflow-hidden max-w-screen-xl mx-auto">
       {/* Decorative elements */}
       <div className="absolute top-12 right-12 w-16 h-16 bg-main-200 rounded-lg border-2 border-black rotate-12 hidden md:block" />
       <div className="absolute bottom-12 left-12 w-12 h-12 bg-main-300 rounded-full border-2 border-black hidden md:block" />

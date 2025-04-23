@@ -3,7 +3,7 @@ import { IconArrowRight } from "@tabler/icons-react";
 import { Badge } from "../ui/badge";
 export default function OfferSection() {
   return (
-    <section className="py-20 px-4 bg-main-50 border-y-4 border-black">
+    <section className="py-20 px-4 bg-main-50 border-b-4 border-black">
       <div className="max-w-6xl mx-auto relative">
         {/* Decorative elements */}
         <div className="absolute -top-8 -left-4 w-16 h-16 bg-main-200 rounded-xl border-2 border-black -rotate-6 hidden lg:block" />
