@@ -1,4 +1,5 @@
 import { IconBrandBluesky, IconBrandGithub, IconHammer, IconUser } from "@tabler/icons-react";
+import Image from "next/image";
 import Link from "next/link";
 
 export default function FooterSection() {
@@ -41,6 +42,15 @@ export default function FooterSection() {
           >
             <IconHammer size={16} />
             My Free tools
+          </Link>
+          <Link
+            href="https://bldbl.dev"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-main-300 hover:underline inline-flex items-center gap-1 transition-colors"
+          >
+            <Image src="/bldbl.svg" alt="bldbl" width={16} height={16} />
+            Structure your vibe code projects
           </Link>
         </div>
         <div className="flex justify-center items-center gap-4 mb-4">
